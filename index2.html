@@ -24,7 +24,8 @@
 	<link rel="manifest" href="favicon/site.webmanifest"/>
 	
 	<title>THE SLOW PRESS</title>
-	 <link rel="stylesheet" href="csslider/csslider.css"/>
+	<!-- Slider by Damiel Drigel on Github https://github.com/drygiel/csslider/tree/master -->
+	<link rel="stylesheet" href="csslider/csslider.css"/>
 	<style>
 	:root {
 	--body-color: #2F1F05; /* brown */
@@ -45,10 +46,26 @@
 	body { color:var(--body-color); background: var(--back-color); font-family: 'Taviraj', serif; padding: 0; margin: 0; }
 
 	/* navigation */
-	.navbar { box-sizing: border-box; width: 100%; background: var(--seco-color); height: 75px; position: fixed; top: 0; left: 0; padding: 0px 10vw; display: flex; align-items: center; border-bottom: 1px solid; z-index: 2; }
+	.navbar { box-sizing: border-box; width: 100vw; background: var(--seco-color); height: 75px; position: fixed; top: 0; left: 0; padding: 0px 10vw; display: flex; align-items: center; border-bottom: 1px solid; z-index: 2; }
 	nav { width: 100%; display: flex; justify-content: space-between; font-family:'Necto Mono', monospace; font-size: 1.5rem; }
 	nav > a { color: var(--body-color); text-decoration: none; transition: 0.3s; }
 	nav > a:hover { text-decoration: underline; }
+	
+	/* hamburger menu from https://alvarotrigo.com/blog/hamburger-menu-css/ */
+	.nav-container { display: none; }
+	.nav-container > h1 { font-family: 'Necto Mono', monospace; font-style: normal; font-size: 1.5rem; }
+	.nav-mobile { width: 100%; height: calc(100vh - 75px); background: var(--back-color); position: absolute; top: 75px; right: 0; padding: 20px 50px; transform: translateX(100%); transition: 0.3s; }
+	.nav-mobile > nav { flex-direction: column; text-align: right; font-size: 2.5rem; }
+	.nav-container .checkbox { position: absolute; display: block; height: 32px; width: 32px; top: 25px; right: 30px; z-index: 5; opacity: 0; cursor: pointer; }
+	.nav-container .hamburger-lines { height: 26px; width: 32px; position: absolute; top: 23px; right: 30px; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; }
+	.hamburger-lines .line { display: block; height: 4px; width: 100%; border-radius: 10px; background: var(--body-color); }
+	.nav-container .hamburger-lines .line1 { transform-origin: 0% 0%; transition: transform 0.4s ease-in-out; }
+	.nav-container .hamburger-lines .line2 { transition: transform 0.2s ease-in-out; }
+	.nav-container .hamburger-lines .line3 { transform-origin: 0% 100%; transition: transform 0.4s ease-in-out; }
+	.nav-container input[type="checkbox"]:checked ~ .nav-mobile { transform: translateX(0); }
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 { transform: rotate(45deg); }
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 { transform: scaleY(0); }
+	.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 { transform: rotate(-45deg); }
 	
 	/* header */
 	header { display: flex; justify-content: center; margin-top: 100px; margin-bottom: 30px; }
@@ -56,11 +73,12 @@
 	header > img:hover { transform: rotate(360deg); }
 	
 	/* content */
-	.container { left: 0; width: 100%; display: flex; justify-content: center; margin: 30px 0px 30px 0px; padding: 30px 0px; gap: 45px; }
+	.container { left: 0; width: 100%; display: flex; justify-content: center; margin: 30px 0px 30px 0px; padding: 30px 0px; gap: 45px; flex-wrap: wrap; }
 	.yellow { background:var(--yellow); border-top: 1px solid; border-bottom: 1px solid; }
-	.contain-full { width: 76vw; }
-	.contain-half { width: 37vw; }
-	.container-third { width: 23vw; }
+	.contain-full { box-sizing: border-box; width: 76vw; }
+	.contain-full-carousel { box-sizing: border-box; width: 76vw; }
+	.contain-half { box-sizing: border-box; width: 37vw; }
+	.contain-third { box-sizing: border-box; width: 23vw; }
 	
 	/* new events */
 	.new-event { padding: 10px; border-bottom: 1px solid; }
@@ -82,7 +100,6 @@
 	.prev-preview { box-sizing: border-box; padding: 5px; border: 1px solid; width: 100%; }
 	.prev-blurb { box-sizing:border-box; padding: 5px;  }
 	.prev-blurb > h3 { margin-top: 0; }
-	
 	
 	/* newsletter bottom */
 	.n-input { color: var(--body-color); border-radius: 0; border: 1px solid #000; margin: 5px; padding: 5px; font-family: 'Necto Mono', monospace; width:200px; outline:none; }
@@ -108,11 +125,42 @@
 	
 	/* decor */
 	
+	/* responsive styling */
+	@media only screen and (max-width: 1024px) {
+	  .navbar { padding: 0 3vw; }
+	  .contain-full { width: 90vw; }
+	  .contain-full-carousel { width: 80vw; }
+	  .contain-half { width: 42vw; }
+	  .contain-third { width: 42vw; }
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.contain-full-carousel { width: 77vw; }
+	  .prev-vol-grid { display: grid; grid-template-columns: 45% 45%; }
+	  #prev-three { display: none; }
+	  .contain-third { width: 70vw; }
+	  #nav-desktop { display: none; }
+	  .nav-container { display: unset; }
+	}
+	
+	@media only screen and (max-width: 550px) {
+	  .prev-vol-grid { display: grid; grid-template-columns: 100%; }
+	  .contain-full-carousel { width: 75vw; }
+	  .contain-half { width: 85vw; }
+	  .contain-third { width: 85vw; }
+	  footer { flex-wrap: wrap; }
+	  footer > div { max-width: unset; width: 100%; }
+	}
+	
+	@media only screen and (max-width: 470px) {
+	  .contain-full-carousel { width: 70vw; }
+	}
+	
 	</style>
   </head>
   <body>
   <div class="navbar">
-    <nav>
+    <nav id="nav-desktop">
 	  <a href="/">Home</a>
 	  <a href="/">About</a>
 	  <a href="/">Read</a>
@@ -120,20 +168,36 @@
 	  <a href="/">Community</a>
 	  <a href="/">Blog</a>
     </nav>
+	<div class="nav-container">
+	<input class="checkbox" type="checkbox" name="" id="" />
+	<div class="hamburger-lines">
+	  <span class="line line1"></span>
+	  <span class="line line2"></span>
+	  <span class="line line3"></span>
+	</div>
+	<div class="nav-mobile">
+	<nav>
+	  <a href="/">Home</a>
+	  <a href="/">About</a>
+	  <a href="/">Read</a>
+	  <a href="/">Merch</a>
+	  <a href="/">Community</a>
+	  <a href="/">Blog</a>
+    </nav>
+	</div>
+	</div>
   </div>
   <header>
   <img src="images/logo.png" alt="The Slow Press">
   </header>
   <div id="carousel" class="container">
-  <!-- Slider by Damiel Drigel on Github https://github.com/drygiel/csslider/tree/master -->
-   <div class="csslider contain-full">
+   <div class="csslider contain-full-carousel">
      <input type="radio" name="slides" id="slides_1" checked />
      <input type="radio" name="slides" id="slides_2" />
      <input type="radio" name="slides" id="slides_3" />
-     <input type="radio" name="slides" id="slides_4" />
      <ul>
          <li><div class="slider-content">
-		 <img src="images/slider-vol6.png">
+		 <img src="images/slider-vol6.png" alt="Volume 6.">
 		 <div class="slider-div">
 		 <h1>Volume 6: Best Before</h1>
 		 <p>The Slow Press Vol. 6: BEST BEFORE features 9 rich food stories centered  around time and change, written, designed, illustrated, and photographed by The Slow Press team and our amazingly talented contributors over the course of 2023.</p>
@@ -142,7 +206,7 @@
 		 </div>
 		 </div></li>
          <li><div class="slider-content">
-		 <img src="images/slider-tcss.png">
+		 <img src="images/slider-tcss.png" alt="Talk Cock Sing Song.">
 		 <div class="slider-div">
 		 <h1>Talk Cock Sing Song</h1>
 		 <p>Talk Cock Sing Song, a zine by The Slow Press and Kenn Lam, is an intersection between the fantasies and realities of chicken, a commodity that plays a significant role in Singaporean diets. Living in a nation that prides itself on its Hainanese Chicken Rice, the writers explore their personal connection to poultry and the role they play in a local context.</p>
@@ -151,7 +215,7 @@
 		 </div>
 		 </div></li>
          <li><div class="slider-content">
-		 <img src="images/slider-htcpp.png">
+		 <img src="images/slider-htcpp.png" alt="How to Cook Prickly Pear.">
 		 <div class="slider-div">
 		 <h1>How to Cook Prickly Pear</h1>
 		 <p>How to Cook a Prickly Pear isn’t just a zine—it is a package from the writer to the reader, through five beautifully crafted chapters, and more snippets. Capturing Mun Yi’s immigrant story through the flavors of Singapore and LA (with make-it-your-own recipes!), she spent months in the kitchen experimenting with ingredients from her local markets while reminiscing dishes from home.</p>
@@ -210,8 +274,8 @@
   <h1>Missed our previous volumes?</h1>
     <div class="prev-vol-grid">
 	<!-- Vol Start -->
-	<div>
-	<img class="prev-preview" src="images/prev-forage.png">
+	<div id="prev-one">
+	<img class="prev-preview" src="images/prev-forage.png" alt="Foragezine.">
 	<div class="prev-blurb"><h3>Foragezine</h3>
 	<p>What could a foraging Singapore look like? What did a foraging Singapore look like?</p>
 	<p>By The Moon and The Tides is an exploration and reimagining of Singapore's relationship with the practice of foraging, perhaps the oldest subsistence pattern of man. </p>
@@ -219,8 +283,8 @@
 	</div>
 	<!-- Vol End -->
 	<!-- Vol Start -->
-	<div>
-	<img class="prev-preview" src="images/prev-vol5.png">
+	<div id="prev-two">
+	<img class="prev-preview" src="images/prev-vol5.png" alt="Volume 5: Bittersweet.">
 	<div class="prev-blurb"><h3>Volume 5: Bittersweet</h3>
 	<p>9 stories in our annual print-only edition that run from bitter to bittersweet and sweet as the pages go.</p>
 	<p>These are longform personal essays that took us about a year to put together, involving 9 writers, 9 illustrators/designers and some of our photographer friends. Many of which offer a fresh perspective of Singaporean food beyond its look and taste.</p>
@@ -228,8 +292,8 @@
 	</div>
 	<!-- Vol End -->
 	<!-- Vol Start -->
-	<div>
-	<img class="prev-preview" src="images/prev-vol4.png">
+	<div id="prev-three">
+	<img class="prev-preview" src="images/prev-vol4.png" alt="Volume 4.">
 	<div class="prev-blurb"><h3>Volume 4</h3>
 	<p>Surrounding the theme of portions, these 9 stories will fit your plates and fill your bellies. Each of them filled to the brim with words, photos, designs and illustrations that we’ve poured our love into.</p>
 	</div>
@@ -241,7 +305,7 @@
   </div>
   
   <div id="newsletter" class="container">
-  <div class="container-third center">
+  <div class="contain-third center">
 	  <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdAgECtjb2PbN5Kv9Qlm72JQxTObZi_OCfaYp4lgnVLWedddw/formResponse" target="_blank">
 	  <section><h2>Get the freshest juice in your inbox.</h2><p>Wanna get first dibs on our events, magazine and other cool things we're up to? Sign up for our mailing list and never miss an update!</p></section>
 	  <section>
