@@ -1,4 +1,6 @@
-﻿.slider-content {
+﻿/* Slider by Damiel Drigel on Github https://github.com/drygiel/csslider/tree/master */
+
+.slider-content {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -19,14 +21,6 @@
 }
 
 .slider-div > h1 { margin-top:0; }
-
-/* responsive styling */
-@media only screen and (max-width: 850px) {
-	  .slider-content > img { width: 92%; max-width: unset; }
-	  .slider-content { flex-wrap: wrap; justify-content: center; }
-	  .slider-div { width: 92%; }
-	}
-	
 
 .csslider {
   -moz-perspective: 1300px;
@@ -262,6 +256,8 @@
 /*#region MODULES */
 /*#endregion */
 
+/* Responsive Styling */
+
 @media only screen and (max-width: 835px) {
 	  .csslider > .arrows label { padding: 10px; }
 	  .csslider > ul { width: 92%; }
@@ -276,3 +272,9 @@
   .csslider > .arrows label { padding: 6px; }
   .csslider > ul { width: 97%; }
 }
+
+@media only screen and (max-width: 850px) {
+	  .slider-content > img { width: 92%; max-width: unset; }
+	  .slider-content { flex-wrap: wrap; justify-content: center; }
+	  .slider-div { width: 92%; }
+	}
