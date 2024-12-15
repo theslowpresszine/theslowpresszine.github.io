@@ -12,7 +12,7 @@
 @font-face {font-family:'Taviraj'; src:url(https://theslowpresszine.com/fonts/Taviraj-BoldItalic.ttf) format('truetype'); font-weight: bold; font-style: italic; }
 @font-face {font-family:'Taviraj'; src:url(https://theslowpresszine.com/fonts/Taviraj-Bold.ttf) format('truetype'); font-weight: bold; font-style: normal; }
 @font-face {font-family:'Taviraj'; src:url(https://theslowpresszine.com/fonts/Taviraj-Italic.ttf) format('truetype'); font-weight: normal; font-style: italic; }
-@font-face {font-family:'Necto Mono'; src:url(fonts/NectoMono-Regular.woff2) format('woff2'); font-weight: normal; font-style: normal; }
+@font-face {font-family:'Necto Mono'; src:url(https://theslowpresszine.com/fonts/NectoMono-Regular.woff2) format('woff2'); font-weight: normal; font-style: normal; }
 	
 body { color:var(--body-color); background: var(--back-color); font-family: 'Taviraj', serif; padding: 0; margin: 0; }
 ::selection { background:var(--main-color); color:#fff; }
