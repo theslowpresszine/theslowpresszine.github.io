@@ -25,14 +25,15 @@
 	<link rel="manifest" href="favicon/site.webmanifest"/>
 	
 	<title>THE SLOW PRESS</title>
-	<link rel="stylesheet" href="styles/csslider.css"/>
-	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/csslider.css"/>
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/newsletter-modal.css" />
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/main.css" />
 	
-	<script src="scripts/html-include.js"></script>
+	<script src="https://www.theslowpresszine.com/scripts/html-include.js"></script>
   </head>
   <body>
   
-  <div class="navbar" w3-include-html="nav.html"></div>
+  <div class="navbar" w3-include-html="https://www.theslowpresszine.com/includes/nav.html"></div>
   
   <header>
   <img src="images/logo.png" alt="The Slow Press">
@@ -151,12 +152,31 @@
   </div>
   </div>
   
-  <div id="newsletter" class="container" w3-include-html="newsletter.html"></div>
+  <div id="newsletter" class="container" w3-include-html="https://www.theslowpresszine.com/includes/newsletter.html"></div>
   
-  <div id="footer" w3-include-html="newsletter.html"></div>
+  <div id="footer" w3-include-html="https://www.theslowpresszine.com/includes/footer.html"></div>
   <a href="#top" role="button" aria-label="back to top"><div class="back-top">↑ top</div></a>
+  <!-- Modal Start -->
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <button onclick="forgetMe()" type="button" class ="close">Close &times;</button>
+    <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdAgECtjb2PbN5Kv9Qlm72JQxTObZi_OCfaYp4lgnVLWedddw/formResponse" target="_blank">
+	  <section><h2>Get the freshest juice in your inbox.</h2><p>Wanna get first dibs on our events, magazine and other cool things we're up to? Sign up for our mailing list and never miss an update!</p></section>
+	  <section>
+	  <input class="n-input" name="entry.2094225876" type="text" placeholder="Name *" id="name" aria-label="Name" required> 
+	  </section>
+	  <section>
+	  <input class="n-input" name="entry.1044792679" type="text" placeholder="Email *" aria-label="Email Adress" id="email" required> 
+	  </section>
+	  
+	  <button class="n-submit" type="submit">Sign Up!</button>
+	  </form>
+  </div>
+  </div>
+  <!-- Modal End -->
   <script>
   includeHTML();
   </script>
+  <script src="https://www.theslowpresszine.com/scripts/newsletter-modal.js"></script>
   </body>
 </html>
