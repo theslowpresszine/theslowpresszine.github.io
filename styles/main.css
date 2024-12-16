@@ -117,7 +117,7 @@ footer > div { max-width: 500px; }
 
 @media only screen and (max-width: 700px) {
   .contain-full-carousel { width: 77vw; }
-  .prev-vol-grid { display: grid; grid-template-columns: 45% 45%; }
+  .prev-grid { display: grid; grid-template-columns: 45% 45%; }
   #prev-three { display: none; }
   .contain-third { width: 70vw; }
   #nav-desktop { display: none; }
@@ -125,7 +125,7 @@ footer > div { max-width: 500px; }
 }
 
 @media only screen and (max-width: 550px) {
-  .prev-vol-grid { display: grid; grid-template-columns: 100%; }
+  .prev-grid { display: grid; grid-template-columns: 100%; }
   .contain-full-carousel { width: 75vw; }
   .contain-threequart { width: 85vw; }
   .contain-half { width: 85vw; }
