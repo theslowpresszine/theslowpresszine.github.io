@@ -272,7 +272,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-	  .slider-content > img { width: 92%; max-width: unset; }
+	  .main-slider-img { width: 92%; max-width: unset; }
 	  .slider-content { flex-wrap: wrap; justify-content: center; }
 	  .slider-div { width: 92%; }
 	}
