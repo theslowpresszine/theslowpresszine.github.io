@@ -10,6 +10,9 @@
 .slider-content > img {
 	border: 1px solid;
 	padding: 5px;
+}
+
+.main-slider-img {
 	max-width: 600px;
 	width: 50%;
 	align-self: flex-start;
