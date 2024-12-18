@@ -127,6 +127,7 @@ footer > div { max-width: 500px; }
 @media only screen and (max-width: 700px) {
   .contain-full-carousel { width: 77vw; }
   .prev-grid { display: grid; grid-template-columns: 45% 45%; }
+  .img-quart-grid { display: grid; grid-template-columns: 45% 45%; }
   .img-span-two-row { grid-row: span 1; }
   #prev-three { display: none; }
   .contain-third { width: 70vw; }
@@ -137,6 +138,7 @@ footer > div { max-width: 500px; }
 @media only screen and (max-width: 550px) {
   .prev-grid { display: grid; grid-template-columns: 100%; }
   .img-half-grid { display: grid; grid-template-columns: 100%; }
+  .img-quart-grid { display: grid; grid-template-columns: 100%; }
   .img-span-two { grid-column: span 1; }
   .img-span-two-row { grid-row: span 1; }
   .contain-full-carousel { width: 75vw; }
