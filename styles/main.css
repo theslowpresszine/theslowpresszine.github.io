@@ -99,6 +99,7 @@ footer > div { max-width: 500px; }
 .past-grid { display: grid; grid-template-columns: auto auto auto auto; font-family:'Necto Mono', monospace; font-size: 0.95em; }
 .past-grid > div { border-bottom: 1px solid; padding: 5px 10px; }
 .past-event { grid-column: 2 / span 3; }
+.past-event > a { text-decoration: none; }
 
 /* home - prev volumes, read, merch */
 .prev-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; width: 100%; }
