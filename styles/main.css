@@ -107,11 +107,11 @@ footer > div { max-width: 500px; }
 .prev-blurb { box-sizing:border-box; padding: 5px;  }
 .prev-blurb > h3 { margin-top: 0; }
 
-/* img grid - variant half */
-.img-half-grid { display: grid; grid-template-columns: auto auto; gap: 20px; }
-.img-half-grid > img { width: 100%; }
-.img-quart-grid { display: grid; grid-template-columns: auto auto auto auto; gap: 20px; }
-.img-quart-grid > img { width: 100%; }
+/* img grid variants */
+.img-half-grid { display: grid; grid-template-columns: auto auto; gap: 20px; width: 100%; }
+.img-half-grid > img { width: 100%; margin: 0 auto; }
+.img-quart-grid { display: grid; grid-template-columns: auto auto auto auto; gap: 20px; width: 100%; }
+.img-quart-grid > img { width: 100%; margin: 0 auto; }
 .img-span-two { grid-column: span 2; }
 .img-span-two-row { grid-row: span 2; }
 
