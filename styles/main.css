@@ -55,8 +55,8 @@ nav > a:hover { text-decoration: underline; }
 
 /* header */
 header { display: flex; justify-content: center; margin-top: 100px; margin-bottom: 30px; }
-header > img { transition: 2s; }
-header > img:hover { transform: rotate(360deg); }
+.header-img { transition: 2s; }
+.header-img:hover { transform: rotate(360deg); }
 
 /* content */
 .container { left: 0; width: 100%; display: flex; justify-content: center; margin: 30px 0px 30px 0px; padding: 30px 0px; gap: 45px; flex-wrap: wrap; }
@@ -101,7 +101,8 @@ footer > div { max-width: 500px; }
 .past-event { grid-column: 2 / span 3; }
 
 /* home - prev volumes, read, merch */
-.prev-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.prev-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; width: 100%; }
+.prev-grid > div { margin: 0 auto; }
 .prev-preview { box-sizing: border-box; padding: 5px; border: 1px solid; width: 100%; }
 .prev-blurb { box-sizing:border-box; padding: 5px;  }
 .prev-blurb > h3 { margin-top: 0; }
