@@ -271,7 +271,7 @@
   .csslider > ul { width: 97%; }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
 	  .main-slider-img { width: 92%; max-width: unset; }
 	  .slider-content { flex-wrap: wrap; justify-content: center; }
 	  .slider-div { width: 92%; }
