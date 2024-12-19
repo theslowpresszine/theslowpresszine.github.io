@@ -1,0 +1,32 @@
+.contain-posts { box-sizing: border-box; width: 50vw; }
+.contain-sidebar { box-sizing: border-box; width: 15vw; }
+
+.post-list {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.post-list > li {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.post-image { width: 30%; flex-shrink:0; }
+
+.post-meta {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family:'Necto Mono', monospace;
+}
+
+.post-link { text-decoration:underline; color:var(--tert-color); margin: 0; }
+
+.category { text-transform: capitalize; }
+
+@media only screen and (max-width: 1024px) {
+  .contain-posts { width: 80vw; }
+  .contain-sidebar { width: 80vw; }
+}

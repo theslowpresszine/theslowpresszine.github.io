@@ -67,7 +67,6 @@ header { display: flex; justify-content: center; margin-top: 100px; margin-botto
 .contain-threequart { box-sizing: border-box; width:60vw; }
 .contain-half { box-sizing: border-box; width: 37vw; }
 .contain-third { box-sizing: border-box; width: 23vw; }
-.contain-twothird { box-sizing: border-box; width: 50vw; }
 .img-full { box-sizing: border-box; width: 100%; }
 .img-border { box-sizing: border-box; padding: 5px; border: 1px solid; width: 100%; }
 
