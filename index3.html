@@ -171,6 +171,12 @@
   
   <div id="footer" w3-include-html="/includes/footer.html"></div>
   <a href="#top" role="button" aria-label="back to top"><div class="back-top">↑ top</div></a>
+  
+  <script>
+  includeHTML();
+  </script>
+  <script src="https://www.theslowpresszine.com/scripts/newsletter-modal.js"></script>
+  
   <!-- Modal Start -->
   <div id="myModal" class="modal">
   <div class="modal-content">
@@ -184,14 +190,10 @@
 	  <input class="n-input" name="entry.1044792679" type="text" placeholder="Email *" aria-label="Email Adress" id="email" required> 
 	  </section>
 	  
-	  <button class="n-submit" type="submit">Sign Up!</button>
+	  <input class="n-submit" type="button" value="Sign up!" id="modalbtnsubmit" onclick="submitFormModal()">
 	  </form>
   </div>
   </div>
   <!-- Modal End -->
-  <script>
-  includeHTML();
-  </script>
-  <script src="https://www.theslowpresszine.com/scripts/newsletter-modal.js"></script>
   </body>
 </html>

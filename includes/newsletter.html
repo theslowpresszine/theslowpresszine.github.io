@@ -1,3 +1,16 @@
+<script>
+function submitFormBottom() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('bottom-form')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
+}
+</script>
+
 <div class="contain-third center">
   <form name="bottom-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdAgECtjb2PbN5Kv9Qlm72JQxTObZi_OCfaYp4lgnVLWedddw/formResponse" target="_blank">
   <section><h2>Get the freshest juice in your inbox.</h2><p>Wanna get first dibs on our events, magazine and other cool things we're up to? Sign up for our mailing list and never miss an update!</p></section>
@@ -8,6 +21,6 @@
   <label class="n-label" for="email">Email *</label><input class="n-input" name="entry.1044792679" type="text" id="email" required> 
   </section>
   
-  <button class="n-submit" type="submit">Sign Up!</button>
+  <input class="n-submit" type="button" value="Sign up!" id="newsletterbtnsubmit" onclick="submitFormBottom()">
   </form>
 </div>
