@@ -16,13 +16,14 @@
 @font-face {font-family:'Necto Mono'; src:url(https://theslowpresszine.com/fonts/NectoMono-Regular.woff2) format('woff2'); font-weight: normal; font-style: normal; }
 	
 body { color:var(--body-color); background: var(--back-color); font-family: 'Taviraj', serif; padding: 0; margin: 0; }
+body, html { cursor:url("https://theslowpresszine.com/images/cursor.ico"), default; }
 ::selection { background:var(--main-color); color:#fff; }
 
 /* text styles */
 h1 { font-weight: 600; font-style: italic; }
 h3 a { color:var(--body-color); text-decoration: none; }
 .before-subtitle { margin-bottom: 0; }
-a { color:var(--tert-color); transition: 0.3s; }
+a { color:var(--tert-color); transition: 0.3s; cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; }
 a:hover { color:var(--main-color); }
 .center { text-align: center; }
 
@@ -42,7 +43,7 @@ nav > a:hover { text-decoration: underline; }
 .nav-container > h1 { font-family: 'Necto Mono', monospace; font-style: normal; font-size: 1.5rem; }
 .nav-mobile { width: 100%; height: calc(100vh - 75px); background: var(--back-color); position: absolute; top: 75px; right: 0; padding: 20px 50px; transform: translateX(100%); transition: 0.3s; }
 .nav-mobile > nav { flex-direction: column; text-align: right; font-size: 2.5rem; }
-.nav-container .checkbox { position: absolute; display: block; height: 32px; width: 32px; top: 20px; right: 30px; z-index: 5; opacity: 0; cursor: pointer; }
+.nav-container .checkbox { position: absolute; display: block; height: 32px; width: 32px; top: 20px; right: 30px; z-index: 5; opacity: 0; cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; }
 .nav-container .hamburger-lines { height: 26px; width: 32px; position: absolute; top: 23px; right: 30px; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; }
 .hamburger-lines .line { display: block; height: 4px; width: 100%; border-radius: 10px; background: var(--body-color); }
 .nav-container .hamburger-lines .line1 { transform-origin: 0% 0%; transition: transform 0.4s ease-in-out; }
@@ -79,7 +80,7 @@ header { display: flex; justify-content: center; margin-top: 100px; margin-botto
 .n-input:focus { border: 1px solid var(--tert-color); }
 .n-label { font-family: 'Necto Mono', monospace; display: inline-block; width: 100px; }
 .n-submit { color: var(--body-color); padding: 10px 30px; border-radius: 0; border: 1px solid; border-radius: 50%; margin-top: 10px; font-family: 'Necto Mono', monospace; font-style:italic; background:var(--back-color); }
-.n-submit:hover { cursor: pointer; background:var(--main-color); color:var(--back-color); }
+.n-submit:hover { cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; background:var(--main-color); color:var(--back-color); }
 
 /* footer */
 footer { box-sizing: border-box; left: 0; bottom: 0; width: 100%; display: flex; justify-content: space-evenly; background: var(--seco-color); border-top: 1px solid; min-height: 200px; padding: 40px 10vw 20px 10vw; gap: 50px; }
@@ -90,7 +91,7 @@ footer > div { max-width: 500px; }
 .new-date { background-color:var(--main-color); border-radius:50%; font-size: 0.7em; padding: 4px 10px; color:var(--back-color); font-weight: 400; }
 .new-event-top { padding-top: 0px; }
 .new-event > summary { font-family: 'Necto Mono', monospace; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 1.2em; font-weight: 600; transition: 0.3s; gap: 10px; }
-.new-event > summary:hover { cursor: pointer; color:var(--main-color); }
+.new-event > summary:hover { cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; color:var(--main-color); }
 .new-event > summary::after { content: '+'; font-size: 1.6em;}
 .new-event[open] > summary { color:var(--main-color); }
 .new-event[open] > summary::after { content: '-'; font-size: 1.6em;}

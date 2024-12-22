@@ -124,7 +124,7 @@
 .csslider > .navigation label {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer;
   border-radius: 50%;
   margin: 0 4px;
   padding: 4px;
@@ -191,7 +191,7 @@
   top: -50%;
   padding: 13px;
   box-shadow: inset 2px -2px 0 1px #635947;
-  cursor: pointer;
+  cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer;
   -moz-transition: box-shadow 0.15s, margin 0.15s;
   -o-transition: box-shadow 0.15s, margin 0.15s;
   -webkit-transition: box-shadow 0.15s, margin 0.15s;
