@@ -41,7 +41,7 @@ nav > a:hover { text-decoration: underline; }
 /* hamburger menu from https://alvarotrigo.com/blog/hamburger-menu-css/ */
 .nav-container { display: none; }
 .nav-container > h1 { font-family: 'Necto Mono', monospace; font-style: normal; font-size: 1.5rem; }
-.nav-mobile { width: 100%; height: calc(100vh - 75px); background: var(--back-color); position: absolute; top: 75px; right: 0; padding: 20px 50px; transform: translateX(100%); transition: 0.3s; }
+.nav-mobile { width: 100%; height: calc(100vh - 75px); background: var(--back-color); position: absolute; top: 75px; right: 0; padding: 20px 30px; transform: translateX(100%); transition: 0.3s; }
 .nav-mobile > nav { flex-direction: column; text-align: right; font-size: 2.5rem; }
 .nav-container .checkbox { position: absolute; display: block; height: 32px; width: 32px; top: 20px; right: 30px; z-index: 5; opacity: 0; cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; }
 .nav-container .hamburger-lines { height: 26px; width: 32px; position: absolute; top: 23px; right: 30px; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; }
