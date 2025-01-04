@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This website was lovingly handcoded by Amalina Lai for The Slow Press. <3 -->
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
-	<meta property="og:title" content="HOME | THE SLOW PRESS"/>
+	<meta property="og:title" content="THE SLOW PRESS"/>
 	<meta property="og:description" content="We are an independent food zine from Singapore dedicated to uncovering stories about food."/>
 	<meta property="og:image" content="/images/meta-image.png"/>
 	<meta property="og:image:width" content="2500"/>
@@ -14,59 +15,182 @@
 	<meta property="og:type" content="website"/>
 	
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:title" content="HOME | THE SLOW PRESS"/>
+	<meta name="twitter:title" content="THE SLOW PRESS"/>
 	<meta name="twitter:description" content="We are an independent food zine from Singapore dedicated to uncovering stories about food."/>
 	<meta name="twitter:image" content="/images/meta-image.png"/>
 	
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.theslowpresszine.com/favicon/apple-touch-icon.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.theslowpresszine.com/favicon/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.theslowpresszine.com/favicon/favicon-16x16.png"/>
+	<link rel="manifest" href="favicon/site.webmanifest"/>
 	
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+	<title>THE SLOW PRESS</title>
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/csslider.css"/>
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/newsletter-modal.css" />
+	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/main.css" />
 	
-	body { font-family: "Taviraj", serif; background:#104c26; }
-	.main { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }
-	.content { box-sizing: border-box; width: 95%; max-width: 800px; padding: 30px; background:#fff; text-align: center; }
-	
-	h1 { font-size: 2.5em; font-style: italic; font-weight: 600; }
-	p { line-height: 150%; }
-	a { color:#C74E00; transition: 0.2s; }
-	a:hover { color:#e1007f; }
-	
-	.newsletter { border: 1px dashed; padding: 20px; max-width: 600px; margin: 30px auto; }
-	.n-input { border-radius: 0; border: 1px solid #000; margin: 5px; padding: 5px; font-family: monospace; width:200px; outline:none; }
-	.n-input:focus { border: 1px solid #e1007f; }
-	.n-label { font-weight: 600; font-size: 0.9em; }
-	.n-submit { padding: 5px 15px; border-radius: 0; border: 1px solid; margin-top: 5px; font-family: "Taviraj", serif; font-style:italic; }
-	.n-submit:hover { cursor: pointer; }
-	</style>
-	
-    <title>THE SLOW PRESS</title>
-
+	<script src="https://www.theslowpresszine.com/scripts/html-include.js"></script>
   </head>
-<body>
-  <div class="main">
-  <div class="content">
-	  <h1>something new is brewing...</h1>
-	  <p>In the meantime, sip on the freshest juice on our Instagram page, <a href="https://www.instagram.com/theslowpress/">@theslowpress</a>.<br>Or get in touch at <a href="mailto:theslowpressmagazine@gmail.com?subject=Hello!">theslowpressmagazine@gmail.com</a>.
-	  
-	  <div class="newsletter">
-	  <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdAgECtjb2PbN5Kv9Qlm72JQxTObZi_OCfaYp4lgnVLWedddw/formResponse" target="_blank">
+  <body>
+  
+  <div class="navbar" w3-include-html="/includes/nav.html"></div>
+  
+  <header>
+  <div w3-include-html="/includes/header.html"></div>
+  </header>
+  
+  <div id="carousel" class="container">
+   <div class="csslider contain-full-carousel">
+    <input type="radio" name="slides" id="slides_1" checked />
+    <input type="radio" name="slides" id="slides_2" />
+    <input type="radio" name="slides" id="slides_3" />
+    <ul>
+        <li><div class="slider-content">
+		<img src="images/slider-vol6.png" class="main-slider-img img-border" alt="Volume 6.">
+		<div class="slider-div">
+		<section>
+		<h1>Volume 6: Best Before</h1>
+		<p>The Slow Press Vol. 6: BEST BEFORE features 9 rich food stories centered  around time and change, written, designed, illustrated, and photographed by The Slow Press team and our amazingly talented contributors over the course of 2023.</p>
+		<a href="/read/vol-6" class="box-link-pink">Find out more →</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSePzBtbYe6iAQXsUDUPND-VrlYXZMWwUw5Vxf7ir9Fy5Na8Vg/viewform" class="box-link-pink">Get a copy →</a>
+		</section>
+		</div>
+		</div></li>
+        <li><div class="slider-content">
+		<img src="images/slider-tcss.png" class="main-slider-img img-border" alt="Talk Cock Sing Song.">
+		<div class="slider-div">
+		<section>
+		<h1>Talk Cock Sing Song</h1>
+		<p>Talk Cock Sing Song, a zine by The Slow Press and Kenn Lam, is an intersection between the fantasies and realities of chicken, a commodity that plays a significant role in Singaporean diets. Living in a nation that prides itself on its Hainanese Chicken Rice, the writers explore their personal connection to poultry and the role they play in a local context.</p>
+		<a href="/read/talk-cock-sing-song" class="box-link-pink">Find out more →</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSePzBtbYe6iAQXsUDUPND-VrlYXZMWwUw5Vxf7ir9Fy5Na8Vg/viewform" class="box-link-pink">Get a copy →</a>
+		</section>
+		</div>
+		</div></li>
+        <li><div class="slider-content">
+		<img src="images/slider-htcpp.png" class="main-slider-img img-border" alt="How to Cook Prickly Pear.">
+		<div class="slider-div">
+		<section>
+		<h1>How to Cook Prickly Pear</h1>
+		<p>How to Cook a Prickly Pear isn’t just a zine—it is a package from the writer to the reader, through five beautifully crafted chapters, and more snippets. Capturing Mun Yi’s immigrant story through the flavors of Singapore and LA (with make-it-your-own recipes!), she spent months in the kitchen experimenting with ingredients from her local markets while reminiscing dishes from home.</p>
+		<a href="/read/how-to-cook-prickly-pear" class="box-link-pink">Find out more →</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSePzBtbYe6iAQXsUDUPND-VrlYXZMWwUw5Vxf7ir9Fy5Na8Vg/viewform" class="box-link-pink">Get a copy →</a>
+		</section>
+		</div>
+		</div></li>
+    </ul>
+    <div class="arrows">
+        <label for="slides_1"></label>
+        <label for="slides_2"></label>
+        <label for="slides_3"></label>
+        <label for="slides_1" class="goto-first"></label>
+        <label for="slides_3" class="goto-last"></label>
+    </div>
+    <div class="navigation">
+ 	    <div>
+         	<label for="slides_1"></label>
+         	<label for="slides_2"></label>
+         	<label for="slides_3"></label>
+ 	    </div>
+    </div>
+    </div>
+  </div>
+  
+  <div id="events" class="container">
+  <!-- News Start -->
+	<div id="new" class="contain-half">
+	<section>
+	<h1>What's Juicing</h1>
+	<p>Nothing yet, still plucking fruits!</p>
+	<!-- Event Start -->
+	<!--
+	<details class="new-event new-event-top">
+	<summary><span><span class="new-date">01/25</span> Talk Cock Sing Song & How To Cook Prickly Pear</span></summary>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</details>
+	-->
+	<!-- Event End -->
+	</section>
+	</div>
+	<div id="past" class="contain-half">
+	<section>
+	<h1>Past Events</h1>
+	<div class="past-grid">
+	<div>12/24</div> <div class="past-event">Kuala Lumpur Art Book Fair</div>
+	<div>11/24</div> <div class="past-event">Tokyo Art Book Fair</div>
+	<div>11/24</div> <div class="past-event">TSP ft. Process Magazine: Pressing & Processing (Zine Launch Party)</div>
+	<div>10/24</div> <div class="past-event">Singapore Art Book Fair + Talk Cock Sing Song & How To Cook Prickly Pear Launch</div>
+	<div>09/24</div> <div class="past-event">TSP &times; Monk's Brew Club: Reading & Drinking Room</a></div>
+	<div></div><div class="past-event"><a href="/community#past-events">& many more... →</a></div>
+	</div>
+	</section>
+	</div>
+  </div>
+  
+  <div id="past-issues" class="container yellow">
+  <div class="contain-full">
+  <section>
+  <h1>Missed our previous volumes?</h1>
+    <div class="prev-grid">
+	<!-- Vol Start -->
+	<div id="prev-one">
+	<img class="prev-preview" src="images/read/prev-forage.png" alt="By The Moon and The Tides.">
+	<div class="prev-blurb"><h3><a href="/read/by-the-moon-and-the-tides">By The Moon and The Tides</a></h3>
+	<p>What could a foraging Singapore look like? What did a foraging Singapore look like?</p>
+	<p>By The Moon and The Tides is an exploration and reimagining of Singapore's relationship with the practice of foraging, perhaps the oldest subsistence pattern of man. </p>
+	</div>
+	</div>
+	<!-- Vol End -->
+	<!-- Vol Start -->
+	<div id="prev-two">
+	<img class="prev-preview" src="images/read/prev-vol5.png" alt="Volume 5: Bittersweet.">
+	<div class="prev-blurb"><h3><a href="/read/vol-5">Volume 5: Bittersweet</a></h3>
+	<p>9 stories in our annual print-only edition that run from bitter to bittersweet and sweet as the pages go.</p>
+	<p>These are longform personal essays that took us about a year to put together, involving 9 writers, 9 illustrators/designers and some of our photographer friends. Many of which offer a fresh perspective of Singaporean food beyond its look and taste.</p>
+	</div>
+	</div>
+	<!-- Vol End -->
+	<!-- Vol Start -->
+	<div id="prev-three">
+	<img class="prev-preview" src="images/read/prev-vol4.png" alt="Volume 4.">
+	<div class="prev-blurb"><h3><a href="/read/vol-4">Volume 4: Jan 2022</a></h3>
+	<p>Surrounding the theme of portions, these 9 stories will fit your plates and fill your bellies. Each of them filled to the brim with words, photos, designs and illustrations that we’ve poured our love into.</p>
+	</div>
+	</div>
+	<!-- Vol End -->
+    </div>
+	<div style="text-align: center;"><a class="box-link-brown" href="/read">Check out all our past volumes →</a></div>
+  </section>
+  </div>
+  </div>
+  
+  <div id="newsletter" class="container" w3-include-html="/includes/newsletter.html"></div>
+  
+  <div id="footer" w3-include-html="/includes/footer.html"></div>
+  <a href="#top" role="button" aria-label="back to top"><div class="back-top">↑ top</div></a>
+  
+  <script>
+  includeHTML();
+  </script>
+  <script src="https://www.theslowpresszine.com/scripts/newsletter-modal.js"></script>
+  
+  <!-- Modal Start -->
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <button onclick="forgetMe()" type="button" class ="close">Close &times;</button>
+    <form name="modal-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdAgECtjb2PbN5Kv9Qlm72JQxTObZi_OCfaYp4lgnVLWedddw/formResponse" target="_blank">
 	  <section><h2>Get the freshest juice in your inbox.</h2><p>Wanna get first dibs on our events, magazine and other cool things we're up to? Sign up for our mailing list and never miss an update!</p></section>
 	  <section>
-	  <label class="n-label" for="name">Name *</label><input class="n-input" name="entry.2094225876" type="text" id="name" required> 
+	  <input class="n-input" name="entry.2094225876" type="text" placeholder="Name *" id="name" aria-label="Name" required> 
 	  </section>
 	  <section>
-	  <label class="n-label" for="email">Email *</label><input class="n-input" name="entry.1044792679" type="text" id="email" required> 
+	  <input class="n-input" name="entry.1044792679" type="text" placeholder="Email *" aria-label="Email Adress" id="email" required> 
 	  </section>
 	  
-	  <button class="n-submit" type="submit">Submit!</button>
+	  <input class="n-submit" type="button" value="Sign up!" id="modalbtnsubmit" onclick="submitFormModal()">
 	  </form>
-	  </div>
   </div>
   </div>
-</body>
+  <!-- Modal End -->
+  </body>
 </html>
-    
