@@ -92,6 +92,7 @@ footer > div { max-width: 500px; }
 .new-date { background-color:var(--main-color); border-radius:50%; font-size: 0.7em; padding: 4px 10px; color:var(--back-color); font-weight: 400; }
 .new-event-top { padding-top: 0px; }
 .new-event > summary { font-family: 'Necto Mono', monospace; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 1.2em; font-weight: 600; transition: 0.3s; gap: 10px; }
+.new-event > .event-name { font-family: 'Necto Mono', monospace; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 1.2em; font-weight: 600; gap: 10px; }
 .new-event > summary:hover { cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; color:var(--main-color); }
 .new-event > summary::after { content: '+'; font-size: 1.6em;}
 .new-event[open] > summary { color:var(--main-color); }
