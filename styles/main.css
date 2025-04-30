@@ -95,8 +95,8 @@ footer > div { max-width: 500px; }
 
 /*home - new events */
 
-.new-event-home { padding: 5px 10px; border-bottom: 1px solid; grid-template-columns: auto auto auto auto; }
-.new-event-home > summary { display: grid; grid-template-columns: auto auto auto auto 10px; font-family:'Necto Mono', monospace; font-size: 0.95em; transition: 0.3s; gap: 10px; }
+.new-event-home { padding: 5px 10px; border-bottom: 1px solid; }
+.new-event-home > summary { display: grid; grid-template-columns: 90px auto auto auto 10px; font-family:'Necto Mono', monospace; font-size: 0.95em; transition: 0.3s; gap: 10px; }
 .new-event-home > summary:hover { cursor:url("https://theslowpresszine.com/images/pointer.ico"), pointer; color:var(--main-color); }
 .new-event-home > summary::after { content: '+'; font-size: 1em;}
 .new-event-home[open] > summary { color:var(--main-color); }
