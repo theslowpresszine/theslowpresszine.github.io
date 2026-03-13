@@ -26,7 +26,7 @@
 	
 	<title>THE SLOW PRESS</title>
 	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/csslider.css"/>
-	<link rel="stylesheet" href="https://www.theslowpresszine.com/styles/newsletter-modal.css" />
+	<link rel="stylesheet" href="styles/newsletter-modal.css" />
 	<link rel="stylesheet" href="styles/main.css" />
 	
 	<script src="https://www.theslowpresszine.com/scripts/html-include.js"></script>
@@ -178,7 +178,7 @@
   <script>
   includeHTML();
   </script>
-  <script src="https://www.theslowpresszine.com/scripts/newsletter-modal.js"></script>
+  
   
   <!-- Modal Start -->
   <div id="myModal" class="modal">
@@ -192,11 +192,14 @@
 	  <section>
 	  <input class="n-input" name="entry.1044792679" type="text" placeholder="Email *" aria-label="Email Adress" id="email" required> 
 	  </section>
-	  
+	  <section>
+		<label class="n-label" for="validation">2+2= *</label><input class="n-input" name="validation" type="text" id="validation" required>
+		</section>
 	  <input class="n-submit" type="button" value="Sign up!" id="modalbtnsubmit" onclick="submitFormModal()">
 	  </form>
   </div>
   </div>
   <!-- Modal End -->
+  <script src="scripts/newsletter-modal.js"></script>
   </body>
 </html>
