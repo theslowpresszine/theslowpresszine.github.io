@@ -10,6 +10,7 @@ function submitFormBottom() {
    return false; // Prevent page refresh
 }
 </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <div class="contain-third center">
   <img src="/images/watermelon.png" style="max-width: 100%;" alt=""><br>
@@ -21,7 +22,7 @@ function submitFormBottom() {
   <section>
   <label class="n-label" for="email">Email *</label><input class="n-input" name="entry.1044792679" type="text" id="email" required> 
   </section>
-  
+  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
  <button class="n-submit" type="submit">Sign Up!</button>
   </form>
 </div>
