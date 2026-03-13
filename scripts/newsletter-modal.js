@@ -20,7 +20,6 @@ window.onclick = function(event) {
 
 // Use local storage to track if user has closed modal previously
 function forgetMe() {
-  localStorage.setItem("dontShow", "true");
   localStorage.dontShow = "true";
   modal.style.display = "none";
 }
