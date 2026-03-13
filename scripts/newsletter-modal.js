@@ -3,7 +3,9 @@ var modal = document.getElementById("myModal");
 
 // Load on webpage load
 window.onload = function() {
-  if (localStorage.dontShow == "true") { }
+  if (localStorage.dontShow == "true") {
+	modal.style.display = "none";
+	  }
   else {
     modal.style.display = "flex";
   }
@@ -18,6 +20,7 @@ window.onclick = function(event) {
 
 // Use local storage to track if user has closed modal previously
 function forgetMe() {
+  localStorage.setItem("dontShow", "true");
   localStorage.dontShow = "true";
   modal.style.display = "none";
 }
